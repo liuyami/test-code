@@ -8,7 +8,7 @@
     <h1>你好，ooxx</h1>
 
 <script>
-    window.screen.orientation.lock('portrait-primary');
+    screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
 
 </script>
 </body>
