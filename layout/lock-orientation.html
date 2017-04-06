@@ -13,9 +13,9 @@
     screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
 
     if (screen.lockOrientationUniversal("portrait")) {
-        console.log('locked');
+        alert('locked');
     } else {
-        console.log('lock failed');
+        alert('lock failed');
     }
 </script>
 </body>
