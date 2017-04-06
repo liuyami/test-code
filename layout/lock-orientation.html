@@ -8,8 +8,15 @@
     <h1>你好，ooxx</h1>
 
 <script>
+    window.screen.orientation.lock('portrait');
+
     screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
 
+    if (screen.lockOrientationUniversal("portrait")) {
+        console.log('locked');
+    } else {
+        console.log('lock failed');
+    }
 </script>
 </body>
 </html>
